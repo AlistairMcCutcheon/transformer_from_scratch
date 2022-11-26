@@ -1,4 +1,12 @@
 [[package]]
+name = "argparse"
+version = "1.4.0"
+description = "Python command-line parsing library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "black"
 version = "22.10.0"
 description = "The uncompromising code formatter."
@@ -85,9 +93,10 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "443d9ca331ddadcf6482abba6b7f3ceebdb49d65d3b55ce43fc408dab21e3cac"
+content-hash = "54f728e97fd6e780a81c9a682a3cd53c52f22b935476807984f0855a90134670"
 
 [metadata.files]
+argparse = []
 black = []
 click = []
 colorama = []
