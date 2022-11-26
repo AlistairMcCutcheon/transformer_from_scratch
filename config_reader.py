@@ -1,11 +1,12 @@
 import importlib.util
 import sys
 from pathlib import Path
+from types import ModuleType
 
 class ConfigReader:
 
     @staticmethod
-    def read_config(path):
+    def read_config(path: str) -> ModuleType:
         # Reads a path to a python module and returns the module as an object
         # https://docs.python.org/3/library/importlib.html#importing-a-source-file-directly
         module_name = Path(path).stem
