@@ -1,5 +1,5 @@
 import argparse
-from config_reader import ConfigReader
+from utils.config_reader import ConfigReader
 
 def main(config):
     pass
@@ -7,7 +7,7 @@ def main(config):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config_file_path", default="config.py")
+    parser.add_argument("--config_file_path", default="tools/config.py")
     args = parser.parse_args()
     config = ConfigReader.read_config(args.config_file_path)
     main(config)
